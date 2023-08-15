@@ -1,10 +1,12 @@
 import { Fragment } from 'react';
-import NavBar from './Components/NavBar';
+import NavBar from './Components/NavBar/NavBar';
+import MealItems from './Components/AvailableMeals/MealItems';
 
 function App() {
   return (
     <Fragment>
       <NavBar></NavBar>
+      <MealItems></MealItems>
     </Fragment>
   );
 }
