@@ -8,7 +8,7 @@ function App(props) {
   const[showCart,setShowCart] = useState(false);
 
   function showCartHandler(){
-          setShowCart(false);
+          setShowCart(true);
   }
   function closeCartHandler(){
     setShowCart(false);
