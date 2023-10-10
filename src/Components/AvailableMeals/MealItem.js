@@ -7,7 +7,7 @@ function MealItem(props){
 
     function onFormSubmit(event){
         event.preventDefault();
-        console.log(input);
+        //console.log(input);
     }
     return(
        <Card>
