@@ -1,11 +1,15 @@
 import React from "react";
 import './NavBar.css'
-function NavBar ()
+function NavBar (props)
 {
+
+    function onCartHandler(){
+        props.cartClicked();
+    }
     return (
-    <nav class="myNav">                                 
+    <nav className="myNav">                                 
     <ul>
-        <li><button>Cart</button></li>
+        <li><button onClick={onCartHandler}>Cart</button></li>
     </ul>
     </nav>
     );

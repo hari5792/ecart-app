@@ -1,4 +1,3 @@
-import Card from "../UI/Card";
 import MealItem from "./MealItem";
 import './MealItems.css'
 
@@ -31,19 +30,16 @@ function MealItems(){
       },
     ];
    return (
-    <Card>
-      <div class="meals">
+      <div className="meals">
          <ul>
             {
                DUMMY_MEALS.map(item=>{
-                  return <MealItem name={item.name} price={item.price} description={item.description}></MealItem>
+                  return <MealItem key={Math.random()} name={item.name} price={item.price} description={item.description}></MealItem>
                })
             }
         </ul>
-      </div>
-    </Card>
         
-     
+      </div>
    );
 }
 
